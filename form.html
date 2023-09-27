@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #daf1fa;
+            text-align: center;
+        }
+        h1 {
+            color: #000000;
+        }
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 65px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #75b4f8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #2463a5;
+        }
+    </style>
+</head>
+<body>
+    <h1>로그인을 위해 아래 항목을 정확하게 입력하십시오</h1>
+    <form action="/action_page.php">
+        <label for="fname">이름:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">성:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="dob">생일:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        <input type="radio" id="html" name="male_female" value="HTML">
+        <label for="html">여성</label><br>
+        <input type="radio" id="css" name="male_female" value="CSS">
+        <label for="css">남성</label><br><br>
+        <label for="age">학년:</label><br>
+        <select id="age" name="age">
+            <option value="first">1학년</option>
+            <option value="second">2학년</option>
+            <option value="third">3학년</option>
+            <option value="fourth">4학년</option>
+            <option value="over">4학년 이상</option>
+        </select><br><br>
+        <label for="major1">컴퓨터 공학:</label><br>
+        <input type="checkbox" id="major1" name="major1" value="deep">
+        <label for="major1"> 컴공심화</label><br>
+        <input type="checkbox" id="major2" name="major2" value="first">
+        <label for="major2"> 1전공</label><br>
+        <input type="checkbox" id="major3" name="major3" value="second">
+        <label for="major3"> 2전공</label><br><br>
+        <label for="comments">더 하실 말씀이 있으면 적어주세요:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+        
+</select>
+
+        </form>
+
+    </form>
+</body>
+</html>
